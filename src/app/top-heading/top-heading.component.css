@@ -1,0 +1,24 @@
+.row-start {
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    height: 30%;
+    overflow: hidden;
+}
+
+.row-center {
+    -webkit-line-clamp: 6;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    height: 60%;
+    overflow: hidden;
+}
+
+.row-end {
+    height: 10%;
+    overflow: hidden;
+}
+
+#row-heading-sub p {
+    font-size: 12px !important;
+}

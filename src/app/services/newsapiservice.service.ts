@@ -267,6 +267,19 @@ export class NewsapiserviceService {
 
 
   //-------------------category api end-------------------//
+  /**
+  * 
+  * 
+  */
+
+
+  //-------------------hot api start-------------------//
+  hotNewsApiUrl = "https://newsapi.org/v2/everything?q=hot" + this.apiKey;
+  // data preventive
+  hotNewsApiUrl2 = "https://newsapi.org/v2/everything?q=new" + this.apiKey;
+  
+  //-------------------hot api end-------------------//
+
   
   // // news api url
   // newsApiUrl = "https://newsapi.org/v2/top-headlines?country=us&apiKey=0239e75895d44dd9a739e10d28e6092f";
@@ -276,9 +289,12 @@ export class NewsapiserviceService {
   
   
   // // top heading
-  // topHeading():Observable<any> {
-  //   return this._http.get(this.newsApiUrl);
-  // }
+  topHeading():Observable<any> {
+    return this._http.get(this.hotNewsApiUrl);
+  }
+  topHeading2():Observable<any> {
+    return this._http.get(this.hotNewsApiUrl2);
+  }
   
   // // top technology news
   // techNews():Observable<any> {

@@ -1,1 +1,92 @@
-<p>top-heading works!</p>
+<div class="container mt-3">
+    <div>
+        <div class="row">
+            <div class="col-lg-8 mb-3">
+                <a title="{{topHeadingDisplay.title}}" target="_blank" href="{{topHeadingDisplay.url}}">
+                    <img width="100%" height="auto" src="{{topHeadingDisplay.urlToImage}}" alt="This is an image">
+                </a>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <div class="row">
+                    <h3 class="fs-3 fw-bold">
+                        <a title="{{topHeadingDisplay.title}}" target="_blank" href="{{topHeadingDisplay.url}}">
+                            {{topHeadingDisplay.title}}
+                        </a>
+                    </h3>
+                </div>
+                <div class="row">
+                    <p>
+                        <a title="{{topHeadingDisplay.title}}" target="_blank" href="{{topHeadingDisplay.url}}">
+                            {{topHeadingDisplay.content}}
+                        </a>
+                    </p>
+                </div>
+                <div class="row">
+                    <p>Source: <a href="#">{{topHeadingDisplay.source.name}}</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row d-none d-md-inline-flex" id="row-heading-sub">
+            <div class="col-lg-4 mb-3">
+                <div class="row row-start">
+                    <h6 class="fs-6 fw-bold">
+                        <a title="{{topHeadingArr[0].title}}" target="_blank" href="{{topHeadingArr[0].url}}">
+                            {{topHeadingArr[0].title}}
+                        </a>
+                    </h6>
+                </div>
+                <div class="row row-center">
+                    <p>
+                        <a title="{{topHeadingArr[0].title}}" target="_blank" href="{{topHeadingArr[0].url}}">
+                            {{topHeadingArr[0].content}}
+                        </a>
+                    </p>
+                </div>
+                <div class="row row-end">
+                    <p>Source: <a href="#">{{topHeadingArr[0].source.name}}</a></p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-3">
+                <div class="row row-start">
+                    <h6 class="fs-6 fw-bold">
+                        <a title="{{topHeadingArr[1].title}}" target="_blank" href="{{topHeadingArr[1].url}}">
+                            {{topHeadingArr[1].title}}
+                        </a>
+                    </h6>
+                </div>
+                <div class="row row-center">
+                    <p>
+                        <a title="{{topHeadingArr[1].title}}" target="_blank" href="{{topHeadingArr[1].url}}">
+                            {{topHeadingArr[1].content}}
+                        </a>
+                    </p>
+                </div>
+                <div class="row row-end">
+                    <p>Source: <a href="#">{{topHeadingArr[1].source.name}}</a></p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-3">
+                <div class="row row-start">
+                    <h6 class="fs-6 fw-bold">
+                        <a title="{{topHeadingArr[2].title}}" target="_blank" href="{{topHeadingArr[2].url}}">
+                            {{topHeadingArr[2].title}}
+                        </a>
+                    </h6>
+                </div>
+                <div class="row row-center">
+                    <p>
+                        <a title="{{topHeadingArr[2].title}}" target="_blank" href="{{topHeadingArr[2].url}}">
+                            {{topHeadingArr[2].content}}
+                        </a>
+                    </p>
+                </div>
+                <div class="row row-end">
+                    <p>Source: <a href="#">{{topHeadingArr[2].source.name}}</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
