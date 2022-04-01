@@ -13,12 +13,23 @@ export class TopHeadingComponent implements OnInit {
   // create variable to save data
   topHeadingDisplay:any;
   topHeadingArr:any  = [];
+  leftContent:any  = [];
 
   ngOnInit(): void {
     
     this._services.topHeading().subscribe((result) => {
       console.log(result);
       try {
+        this._services.topContent().subscribe((result) => {
+          console.log(result);
+          this.leftContent = result.articles;
+          for (var i = 0; i < this.leftContent.length; i++) {
+            if (this.leftContent[i].urlToImage == null) {
+              this.leftContent[i].urlToImage == "../../assets/not-image.jpg";
+            } 
+          }
+        });
+
         
         if (result.articles.length > 0) {
           this.topHeadingArr = result.articles;
@@ -48,7 +59,7 @@ export class TopHeadingComponent implements OnInit {
           });
         }
       } catch (error) {
-          
+          console.log(error);
       }
     });
     

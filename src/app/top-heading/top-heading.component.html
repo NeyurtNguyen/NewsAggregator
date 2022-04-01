@@ -8,11 +8,11 @@
             </div>
             <div class="col-lg-4 mb-3">
                 <div class="row">
-                    <h3 class="fs-3 fw-bold">
+                    <h1 class="fs-3 fw-bold">
                         <a title="{{topHeadingDisplay.title}}" target="_blank" href="{{topHeadingDisplay.url}}">
                             {{topHeadingDisplay.title}}
                         </a>
-                    </h3>
+                    </h1>
                 </div>
                 <div class="row">
                     <p>
@@ -27,7 +27,7 @@
             </div>
         </div>
 
-        <div class="row d-none d-md-inline-flex" id="row-heading-sub">
+        <div class="row d-none d-md-inline-flex mb-5" id="row-heading-sub">
             <div class="col-lg-4 mb-3">
                 <div class="row row-start">
                     <h6 class="fs-6 fw-bold">
@@ -88,5 +88,39 @@
                 </div>
             </div>
         </div>
+
+        <div class="row" id="main-content">
+            <h3>Top News</h3>
+
+            <div class="col-lg-5" id="left-content">
+                <div *ngFor="let article of leftContent" class="row mb-3">
+                    <div class="row">
+                        <h6 class="fs-6 fw-bold">
+                            <a title="{{article.title}}" target="_blank" href="{{article.url}}">
+                                {{article.title}}
+                            </a>
+                        </h6>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <a title="{{article.title}}" target="_blank" href="{{article.url}}">
+                                <img width="100%" height="auto" src="{{article.urlToImage}}" alt="This is an image">
+                            </a>
+                        </div>
+                        <div class="col-lg-7 col-right">
+                            <p>
+                                <a title="{{article.title}}" target="_blank" href="{{article.url}}">
+                                    {{article.content}}
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row"></div>
+            </div>
+        </div>
     </div>
+
+
 </div>

@@ -277,6 +277,8 @@ export class NewsapiserviceService {
   hotNewsApiUrl = "https://newsapi.org/v2/everything?q=hot" + this.apiKey;
   // data preventive
   hotNewsApiUrl2 = "https://newsapi.org/v2/everything?q=new" + this.apiKey;
+
+  topNewsApiUrl = "https://newsapi.org/v2/everything?q=top" + this.apiKey;
   
   //-------------------hot api end-------------------//
 
@@ -294,6 +296,10 @@ export class NewsapiserviceService {
   }
   topHeading2():Observable<any> {
     return this._http.get(this.hotNewsApiUrl2);
+  }
+
+  topContent():Observable<any> {
+    return this._http.get(this.topNewsApiUrl);
   }
   
   // // top technology news
