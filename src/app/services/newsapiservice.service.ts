@@ -11,7 +11,7 @@ export class NewsapiserviceService {
 
   urlTopHeadlines = "https://newsapi.org/v2/top-headlines";
   
-  apiKey= "&apiKey=0239e75895d44dd9a739e10d28e6092f";
+  apiKey= "&apiKey=0239e75895d44dd9a739e10d28e6092f" || "&apiKey=0239e75895d44dd9a739e10d28e6092f";
 
   //-------------------country api start-------------------//
 
@@ -297,9 +297,58 @@ export class NewsapiserviceService {
   topHeading2():Observable<any> {
     return this._http.get(this.hotNewsApiUrl2);
   }
-
+  // main content
   topContent():Observable<any> {
     return this._http.get(this.topNewsApiUrl);
+  }
+  bussinessTopContent():Observable<any> {
+    return this._http.get(this.businessUsApiUrl);
+  }
+  // preventive
+  bussinessTopContent2():Observable<any> {
+    return this._http.get(this.businessGbApiUrl);
+  }
+  entertainmentTopContent():Observable<any> {
+    return this._http.get(this.entertainmentUsApiUrl);
+  }
+  // preventive
+  entertainmentTopContent2():Observable<any> {
+    return this._http.get(this.entertainmentGbApiUrl);
+  }
+  generalTopContent():Observable<any> {
+    return this._http.get(this.generalUsApiUrl);
+  }
+  // preventive
+  generalTopContent2():Observable<any> {
+    return this._http.get(this.generalGbApiUrl);
+  }
+  healthTopContent():Observable<any> {
+    return this._http.get(this.healthUsApiUrl);
+  }
+  // preventive
+  healthTopContent2():Observable<any> {
+    return this._http.get(this.healthGbApiUrl);
+  }
+  scienceTopContent():Observable<any> {
+    return this._http.get(this.scienceUsApiUrl);
+  }
+  // preventive
+  scienceTopContent2():Observable<any> {
+    return this._http.get(this.scienceGbApiUrl);
+  }
+  sportsTopContent():Observable<any> {
+    return this._http.get(this.sportsUsApiUrl);
+  }
+  // preventive
+  sportsTopContent2():Observable<any> {
+    return this._http.get(this.sportsGbApiUrl);
+  }
+  technologyTopContent():Observable<any> {
+    return this._http.get(this.techUsApiUrl);
+  }
+  // preventive
+  technologyTopContent2():Observable<any> {
+    return this._http.get(this.techGbApiUrl);
   }
   
   // // top technology news

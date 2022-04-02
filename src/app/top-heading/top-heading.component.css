@@ -27,6 +27,14 @@
     font-size: 15px !important;
 }
 
+.border-right-1-e5 {
+    border-right: 1px solid #e5e5e5 !important;
+}
+
+.border-bottom-1-e5 {
+    border-bottom: 1px solid #e5e5e5 !important;
+}
+
 #row-heading-sub p {
     font-size: 12px !important;
 }
