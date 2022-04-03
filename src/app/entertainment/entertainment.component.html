@@ -1,1 +1,515 @@
-<p>entertainment works!</p>
+<div class="container mt-3">
+    <div>
+        <div class="row">
+            <div class="col-lg-8 mb-3">
+                <a title="{{topHeadingDisplay.title}}" target="_blank" href="{{topHeadingDisplay.url}}">
+                    <img width="100%" height="auto" src="{{topHeadingDisplay.urlToImage}}" alt="This is an image">
+                </a>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <div class="row">
+                    <h1 class="fs-3 fw-bold">
+                        <a title="{{topHeadingDisplay.title}}" target="_blank" href="{{topHeadingDisplay.url}}">
+                            {{topHeadingDisplay.title}}
+                        </a>
+                    </h1>
+                </div>
+                <div class="row">
+                    <p>
+                        <a title="{{topHeadingDisplay.title}}" target="_blank" href="{{topHeadingDisplay.url}}">
+                            {{topHeadingDisplay.content}}
+                        </a>
+                    </p>
+                </div>
+                <div class="row">
+                    <p>Source: <a href="#">{{topHeadingDisplay.source.name}}</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row d-none d-md-inline-flex mb-5 border-bottom-1-e5" id="row-heading-sub">
+            <div class="col-lg-4 mb-3">
+                <div class="row row-start">
+                    <h6 class="fs-6 fw-bold">
+                        <a title="{{topHeadingArr[0].title}}" target="_blank" href="{{topHeadingArr[0].url}}">
+                            {{topHeadingArr[0].title}}
+                        </a>
+                    </h6>
+                </div>
+                <div class="row row-center">
+                    <p>
+                        <a title="{{topHeadingArr[0].title}}" target="_blank" href="{{topHeadingArr[0].url}}">
+                            {{topHeadingArr[0].content}}
+                        </a>
+                    </p>
+                </div>
+                <div class="row row-end">
+                    <p>Source: <a href="#">{{topHeadingArr[0].source.name}}</a></p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-3">
+                <div class="row row-start">
+                    <h6 class="fs-6 fw-bold">
+                        <a title="{{topHeadingArr[1].title}}" target="_blank" href="{{topHeadingArr[1].url}}">
+                            {{topHeadingArr[1].title}}
+                        </a>
+                    </h6>
+                </div>
+                <div class="row row-center">
+                    <p>
+                        <a title="{{topHeadingArr[1].title}}" target="_blank" href="{{topHeadingArr[1].url}}">
+                            {{topHeadingArr[1].content}}
+                        </a>
+                    </p>
+                </div>
+                <div class="row row-end">
+                    <p>Source: <a href="#">{{topHeadingArr[1].source.name}}</a></p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-3">
+                <div class="row row-start">
+                    <h6 class="fs-6 fw-bold">
+                        <a title="{{topHeadingArr[2].title}}" target="_blank" href="{{topHeadingArr[2].url}}">
+                            {{topHeadingArr[2].title}}
+                        </a>
+                    </h6>
+                </div>
+                <div class="row row-center">
+                    <p>
+                        <a title="{{topHeadingArr[2].title}}" target="_blank" href="{{topHeadingArr[2].url}}">
+                            {{topHeadingArr[2].content}}
+                        </a>
+                    </p>
+                </div>
+                <div class="row row-end">
+                    <p>Source: <a href="#">{{topHeadingArr[2].source.name}}</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row border-bottom-1-e5" id="main-content">
+
+            <div class="col-lg-5 border-right-1-e5 pl-3 pb-3 m-0 pr-3" id="left-content">
+                <h3 class="mb-3">Top News</h3>
+
+                <div *ngFor="let article of leftContentEntertainmentPage" class="row pb-3">
+                    <div class="row">
+                        <h6 class="fs-6 fw-bold">
+                            <a title="{{article.title}}" target="_blank" href="{{article.url}}">
+                                {{article.title}}
+                            </a>
+                        </h6>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <a title="{{article.title}}" target="_blank" href="{{article.url}}">
+                                <img width="100%" height="auto" src="{{article.urlToImage}}" alt="This is an image">
+                            </a>
+                        </div>
+                        <div class="col-lg-7 col-right">
+                            <p>
+                                <a title="{{article.title}}" target="_blank" href="{{article.url}}">
+                                    {{article.content}}
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7 m-0 pl-3 pr-3 pb-3" id="right-content">
+                <!-- Entertainment Us -->
+                <div class="row border-bottom-1-e5">
+                    <h3 class="mb-3">
+                        <a title="United States" href="#">
+                            United States
+                        </a>
+                    </h3>
+
+                    <div class="col-lg-12">
+                        <div class="row border-bottom-1-e5">
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-3">
+                                        <a title="{{entertainmentUsTopContent[0].title}}" target="_blank" href="{{entertainmentUsTopContent[0].url}}">
+                                            <img width="100%" height="auto" src="{{entertainmentUsTopContent[0].urlToImage}}" alt="This is an image">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <h6 class="fs-6 fw-bold">
+                                            <a title="{{entertainmentUsTopContent[0].title}}" target="_blank" href="{{entertainmentUsTopContent[0].url}}">
+                                                {{entertainmentUsTopContent[0].title}}
+                                            </a>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{entertainmentUsTopContent[0].title}}" target="_blank" href="{{entertainmentUsTopContent[0].url}}">
+                                            {{entertainmentUsTopContent[0].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="row">
+                                    <h6 class="fs-6 fw-bold">
+                                        <a title="{{entertainmentUsTopContent[1].title}}" target="_blank" href="{{entertainmentUsTopContent[1].url}}">
+                                            {{entertainmentUsTopContent[1].title}}
+                                        </a>
+                                    </h6>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{entertainmentUsTopContent[1].title}}" target="_blank" href="{{entertainmentUsTopContent[1].url}}">
+                                            {{entertainmentUsTopContent[1].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{entertainmentUsTopContent[2].title}}" target="_blank" href="{{entertainmentUsTopContent[2].url}}">
+                                        {{entertainmentUsTopContent[2].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{entertainmentUsTopContent[3].title}}" target="_blank" href="{{entertainmentUsTopContent[3].url}}">
+                                        {{entertainmentUsTopContent[3].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{entertainmentUsTopContent[4].title}}" target="_blank" href="{{entertainmentUsTopContent[4].url}}">
+                                        {{entertainmentUsTopContent[4].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Entertainment Gb -->
+                <div class="row border-bottom-1-e5 pt-3">
+                    <h3 class="mb-3">
+                        <a title="United Kingdom" href="#">
+                            United Kingdom
+                        </a>
+                    </h3>
+
+                    <div class="col-lg-12">
+                        <div class="row border-bottom-1-e5">
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-3">
+                                        <a title="{{entertainmentGbTopContent[0].title}}" target="_blank" href="{{entertainmentGbTopContent[0].url}}">
+                                            <img width="100%" height="auto" src="{{entertainmentGbTopContent[0].urlToImage}}" alt="This is an image">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <h6 class="fs-6 fw-bold">
+                                            <a title="{{entertainmentGbTopContent[0].title}}" target="_blank" href="{{entertainmentGbTopContent[0].url}}">
+                                                {{entertainmentGbTopContent[0].title}}
+                                            </a>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{entertainmentGbTopContent[0].title}}" target="_blank" href="{{entertainmentGbTopContent[0].url}}">
+                                            {{entertainmentGbTopContent[0].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="row">
+                                    <h6 class="fs-6 fw-bold">
+                                        <a title="{{entertainmentGbTopContent[1].title}}" target="_blank" href="{{entertainmentGbTopContent[1].url}}">
+                                            {{entertainmentGbTopContent[1].title}}
+                                        </a>
+                                    </h6>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{entertainmentGbTopContent[1].title}}" target="_blank" href="{{entertainmentGbTopContent[1].url}}">
+                                            {{entertainmentGbTopContent[1].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{entertainmentGbTopContent[2].title}}" target="_blank" href="{{entertainmentGbTopContent[2].url}}">
+                                        {{entertainmentGbTopContent[2].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{entertainmentGbTopContent[3].title}}" target="_blank" href="{{entertainmentGbTopContent[3].url}}">
+                                        {{entertainmentGbTopContent[3].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{entertainmentGbTopContent[4].title}}" target="_blank" href="{{entertainmentGbTopContent[4].url}}">
+                                        {{entertainmentGbTopContent[4].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Entertainment Ca -->
+                <div class="row border-bottom-1-e5 pt-3">
+                    <h3 class="mb-3">
+                        <a title="Canada" href="#">
+                            Canada
+                        </a>
+                    </h3>
+
+                    <div class="col-lg-12">
+                        <div class="row border-bottom-1-e5">
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-3">
+                                        <a title="{{entertainmentCaTopContent[0].title}}" target="_blank" href="{{entertainmentCaTopContent[0].url}}">
+                                            <img width="100%" height="auto" src="{{entertainmentCaTopContent[0].urlToImage}}" alt="This is an image">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <h6 class="fs-6 fw-bold">
+                                            <a title="{{entertainmentCaTopContent[0].title}}" target="_blank" href="{{entertainmentCaTopContent[0].url}}">
+                                                {{entertainmentCaTopContent[0].title}}
+                                            </a>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{entertainmentCaTopContent[0].title}}" target="_blank" href="{{entertainmentCaTopContent[0].url}}">
+                                            {{entertainmentCaTopContent[0].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="row">
+                                    <h6 class="fs-6 fw-bold">
+                                        <a title="{{entertainmentCaTopContent[1].title}}" target="_blank" href="{{entertainmentCaTopContent[1].url}}">
+                                            {{entertainmentCaTopContent[1].title}}
+                                        </a>
+                                    </h6>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{entertainmentCaTopContent[1].title}}" target="_blank" href="{{entertainmentCaTopContent[1].url}}">
+                                            {{entertainmentCaTopContent[1].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{entertainmentCaTopContent[2].title}}" target="_blank" href="{{entertainmentCaTopContent[2].url}}">
+                                        {{entertainmentCaTopContent[2].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{entertainmentCaTopContent[3].title}}" target="_blank" href="{{entertainmentCaTopContent[3].url}}">
+                                        {{entertainmentCaTopContent[3].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{entertainmentCaTopContent[4].title}}" target="_blank" href="{{entertainmentCaTopContent[4].url}}">
+                                        {{entertainmentCaTopContent[4].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Entertainment Au -->
+                <div class="row border-bottom-1-e5 pt-3">
+                    <h3 class="mb-3">
+                        <a title="Australia" href="#">
+                            Australia
+                        </a>
+                    </h3>
+
+                    <div class="col-lg-12">
+                        <div class="row border-bottom-1-e5">
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-3">
+                                        <a title="{{entertainmentAuTopContent[0].title}}" target="_blank" href="{{entertainmentAuTopContent[0].url}}">
+                                            <img width="100%" height="auto" src="{{entertainmentAuTopContent[0].urlToImage}}" alt="This is an image">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <h6 class="fs-6 fw-bold">
+                                            <a title="{{entertainmentAuTopContent[0].title}}" target="_blank" href="{{entertainmentAuTopContent[0].url}}">
+                                                {{entertainmentAuTopContent[0].title}}
+                                            </a>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{entertainmentAuTopContent[0].title}}" target="_blank" href="{{entertainmentAuTopContent[0].url}}">
+                                            {{entertainmentAuTopContent[0].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="row">
+                                    <h6 class="fs-6 fw-bold">
+                                        <a title="{{entertainmentAuTopContent[1].title}}" target="_blank" href="{{entertainmentAuTopContent[1].url}}">
+                                            {{entertainmentAuTopContent[1].title}}
+                                        </a>
+                                    </h6>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{entertainmentAuTopContent[1].title}}" target="_blank" href="{{entertainmentAuTopContent[1].url}}">
+                                            {{entertainmentAuTopContent[1].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{entertainmentAuTopContent[2].title}}" target="_blank" href="{{entertainmentAuTopContent[2].url}}">
+                                        {{entertainmentAuTopContent[2].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{entertainmentAuTopContent[3].title}}" target="_blank" href="{{entertainmentAuTopContent[3].url}}">
+                                        {{entertainmentAuTopContent[3].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{entertainmentAuTopContent[4].title}}" target="_blank" href="{{entertainmentAuTopContent[4].url}}">
+                                        {{entertainmentAuTopContent[4].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Entertainment Ie -->
+                <div class="row border-bottom-1-e5 pt-3">
+                    <h3 class="mb-3">
+                        <a title="Ireland" href="#">
+                            Ireland
+                        </a>
+                    </h3>
+
+                    <div class="col-lg-12">
+                        <div class="row border-bottom-1-e5">
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-3">
+                                        <a title="{{entertainmentIeTopContent[0].title}}" target="_blank" href="{{entertainmentIeTopContent[0].url}}">
+                                            <img width="100%" height="auto" src="{{entertainmentIeTopContent[0].urlToImage}}" alt="This is an image">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <h6 class="fs-6 fw-bold">
+                                            <a title="{{entertainmentIeTopContent[0].title}}" target="_blank" href="{{entertainmentIeTopContent[0].url}}">
+                                                {{entertainmentIeTopContent[0].title}}
+                                            </a>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{entertainmentIeTopContent[0].title}}" target="_blank" href="{{entertainmentIeTopContent[0].url}}">
+                                            {{entertainmentIeTopContent[0].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="row">
+                                    <h6 class="fs-6 fw-bold">
+                                        <a title="{{entertainmentIeTopContent[1].title}}" target="_blank" href="{{entertainmentIeTopContent[1].url}}">
+                                            {{entertainmentIeTopContent[1].title}}
+                                        </a>
+                                    </h6>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{entertainmentIeTopContent[1].title}}" target="_blank" href="{{entertainmentIeTopContent[1].url}}">
+                                            {{entertainmentIeTopContent[1].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{entertainmentIeTopContent[2].title}}" target="_blank" href="{{entertainmentIeTopContent[2].url}}">
+                                        {{entertainmentIeTopContent[2].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{entertainmentIeTopContent[3].title}}" target="_blank" href="{{entertainmentIeTopContent[3].url}}">
+                                        {{entertainmentIeTopContent[3].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{entertainmentIeTopContent[4].title}}" target="_blank" href="{{entertainmentIeTopContent[4].url}}">
+                                        {{entertainmentIeTopContent[4].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

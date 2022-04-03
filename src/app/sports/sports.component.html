@@ -1,1 +1,515 @@
-<p>sports works!</p>
+<div class="container mt-3">
+    <div>
+        <div class="row">
+            <div class="col-lg-8 mb-3">
+                <a title="{{topHeadingDisplay.title}}" target="_blank" href="{{topHeadingDisplay.url}}">
+                    <img width="100%" height="auto" src="{{topHeadingDisplay.urlToImage}}" alt="This is an image">
+                </a>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <div class="row">
+                    <h1 class="fs-3 fw-bold">
+                        <a title="{{topHeadingDisplay.title}}" target="_blank" href="{{topHeadingDisplay.url}}">
+                            {{topHeadingDisplay.title}}
+                        </a>
+                    </h1>
+                </div>
+                <div class="row">
+                    <p>
+                        <a title="{{topHeadingDisplay.title}}" target="_blank" href="{{topHeadingDisplay.url}}">
+                            {{topHeadingDisplay.content}}
+                        </a>
+                    </p>
+                </div>
+                <div class="row">
+                    <p>Source: <a href="#">{{topHeadingDisplay.source.name}}</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row d-none d-md-inline-flex mb-5 border-bottom-1-e5" id="row-heading-sub">
+            <div class="col-lg-4 mb-3">
+                <div class="row row-start">
+                    <h6 class="fs-6 fw-bold">
+                        <a title="{{topHeadingArr[0].title}}" target="_blank" href="{{topHeadingArr[0].url}}">
+                            {{topHeadingArr[0].title}}
+                        </a>
+                    </h6>
+                </div>
+                <div class="row row-center">
+                    <p>
+                        <a title="{{topHeadingArr[0].title}}" target="_blank" href="{{topHeadingArr[0].url}}">
+                            {{topHeadingArr[0].content}}
+                        </a>
+                    </p>
+                </div>
+                <div class="row row-end">
+                    <p>Source: <a href="#">{{topHeadingArr[0].source.name}}</a></p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-3">
+                <div class="row row-start">
+                    <h6 class="fs-6 fw-bold">
+                        <a title="{{topHeadingArr[1].title}}" target="_blank" href="{{topHeadingArr[1].url}}">
+                            {{topHeadingArr[1].title}}
+                        </a>
+                    </h6>
+                </div>
+                <div class="row row-center">
+                    <p>
+                        <a title="{{topHeadingArr[1].title}}" target="_blank" href="{{topHeadingArr[1].url}}">
+                            {{topHeadingArr[1].content}}
+                        </a>
+                    </p>
+                </div>
+                <div class="row row-end">
+                    <p>Source: <a href="#">{{topHeadingArr[1].source.name}}</a></p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-3">
+                <div class="row row-start">
+                    <h6 class="fs-6 fw-bold">
+                        <a title="{{topHeadingArr[2].title}}" target="_blank" href="{{topHeadingArr[2].url}}">
+                            {{topHeadingArr[2].title}}
+                        </a>
+                    </h6>
+                </div>
+                <div class="row row-center">
+                    <p>
+                        <a title="{{topHeadingArr[2].title}}" target="_blank" href="{{topHeadingArr[2].url}}">
+                            {{topHeadingArr[2].content}}
+                        </a>
+                    </p>
+                </div>
+                <div class="row row-end">
+                    <p>Source: <a href="#">{{topHeadingArr[2].source.name}}</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row border-bottom-1-e5" id="main-content">
+
+            <div class="col-lg-5 border-right-1-e5 pl-3 pb-3 m-0 pr-3" id="left-content">
+                <h3 class="mb-3">Top News</h3>
+
+                <div *ngFor="let article of leftContentSportsPage" class="row pb-3">
+                    <div class="row">
+                        <h6 class="fs-6 fw-bold">
+                            <a title="{{article.title}}" target="_blank" href="{{article.url}}">
+                                {{article.title}}
+                            </a>
+                        </h6>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <a title="{{article.title}}" target="_blank" href="{{article.url}}">
+                                <img width="100%" height="auto" src="{{article.urlToImage}}" alt="This is an image">
+                            </a>
+                        </div>
+                        <div class="col-lg-7 col-right">
+                            <p>
+                                <a title="{{article.title}}" target="_blank" href="{{article.url}}">
+                                    {{article.content}}
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7 m-0 pl-3 pr-3 pb-3" id="right-content">
+                <!-- Sports Us -->
+                <div class="row border-bottom-1-e5">
+                    <h3 class="mb-3">
+                        <a title="United States" href="#">
+                            United States
+                        </a>
+                    </h3>
+
+                    <div class="col-lg-12">
+                        <div class="row border-bottom-1-e5">
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-3">
+                                        <a title="{{sportsUsTopContent[0].title}}" target="_blank" href="{{sportsUsTopContent[0].url}}">
+                                            <img width="100%" height="auto" src="{{sportsUsTopContent[0].urlToImage}}" alt="This is an image">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <h6 class="fs-6 fw-bold">
+                                            <a title="{{sportsUsTopContent[0].title}}" target="_blank" href="{{sportsUsTopContent[0].url}}">
+                                                {{sportsUsTopContent[0].title}}
+                                            </a>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{sportsUsTopContent[0].title}}" target="_blank" href="{{sportsUsTopContent[0].url}}">
+                                            {{sportsUsTopContent[0].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="row">
+                                    <h6 class="fs-6 fw-bold">
+                                        <a title="{{sportsUsTopContent[1].title}}" target="_blank" href="{{sportsUsTopContent[1].url}}">
+                                            {{sportsUsTopContent[1].title}}
+                                        </a>
+                                    </h6>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{sportsUsTopContent[1].title}}" target="_blank" href="{{sportsUsTopContent[1].url}}">
+                                            {{sportsUsTopContent[1].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{sportsUsTopContent[2].title}}" target="_blank" href="{{sportsUsTopContent[2].url}}">
+                                        {{sportsUsTopContent[2].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{sportsUsTopContent[3].title}}" target="_blank" href="{{sportsUsTopContent[3].url}}">
+                                        {{sportsUsTopContent[3].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{sportsUsTopContent[4].title}}" target="_blank" href="{{sportsUsTopContent[4].url}}">
+                                        {{sportsUsTopContent[4].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- sports Gb -->
+                <div class="row border-bottom-1-e5 pt-3">
+                    <h3 class="mb-3">
+                        <a title="United Kingdom" href="#">
+                            United Kingdom
+                        </a>
+                    </h3>
+
+                    <div class="col-lg-12">
+                        <div class="row border-bottom-1-e5">
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-3">
+                                        <a title="{{sportsGbTopContent[0].title}}" target="_blank" href="{{sportsGbTopContent[0].url}}">
+                                            <img width="100%" height="auto" src="{{sportsGbTopContent[0].urlToImage}}" alt="This is an image">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <h6 class="fs-6 fw-bold">
+                                            <a title="{{sportsGbTopContent[0].title}}" target="_blank" href="{{sportsGbTopContent[0].url}}">
+                                                {{sportsGbTopContent[0].title}}
+                                            </a>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{sportsGbTopContent[0].title}}" target="_blank" href="{{sportsGbTopContent[0].url}}">
+                                            {{sportsGbTopContent[0].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="row">
+                                    <h6 class="fs-6 fw-bold">
+                                        <a title="{{sportsGbTopContent[1].title}}" target="_blank" href="{{sportsGbTopContent[1].url}}">
+                                            {{sportsGbTopContent[1].title}}
+                                        </a>
+                                    </h6>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{sportsGbTopContent[1].title}}" target="_blank" href="{{sportsGbTopContent[1].url}}">
+                                            {{sportsGbTopContent[1].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{sportsGbTopContent[2].title}}" target="_blank" href="{{sportsGbTopContent[2].url}}">
+                                        {{sportsGbTopContent[2].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{sportsGbTopContent[3].title}}" target="_blank" href="{{sportsGbTopContent[3].url}}">
+                                        {{sportsGbTopContent[3].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{sportsGbTopContent[4].title}}" target="_blank" href="{{sportsGbTopContent[4].url}}">
+                                        {{sportsGbTopContent[4].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- sports Ca -->
+                <div class="row border-bottom-1-e5 pt-3">
+                    <h3 class="mb-3">
+                        <a title="Canada" href="#">
+                            Canada
+                        </a>
+                    </h3>
+
+                    <div class="col-lg-12">
+                        <div class="row border-bottom-1-e5">
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-3">
+                                        <a title="{{sportsCaTopContent[0].title}}" target="_blank" href="{{sportsCaTopContent[0].url}}">
+                                            <img width="100%" height="auto" src="{{sportsCaTopContent[0].urlToImage}}" alt="This is an image">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <h6 class="fs-6 fw-bold">
+                                            <a title="{{sportsCaTopContent[0].title}}" target="_blank" href="{{sportsCaTopContent[0].url}}">
+                                                {{sportsCaTopContent[0].title}}
+                                            </a>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{sportsCaTopContent[0].title}}" target="_blank" href="{{sportsCaTopContent[0].url}}">
+                                            {{sportsCaTopContent[0].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="row">
+                                    <h6 class="fs-6 fw-bold">
+                                        <a title="{{sportsCaTopContent[1].title}}" target="_blank" href="{{sportsCaTopContent[1].url}}">
+                                            {{sportsCaTopContent[1].title}}
+                                        </a>
+                                    </h6>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{sportsCaTopContent[1].title}}" target="_blank" href="{{sportsCaTopContent[1].url}}">
+                                            {{sportsCaTopContent[1].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{sportsCaTopContent[2].title}}" target="_blank" href="{{sportsCaTopContent[2].url}}">
+                                        {{sportsCaTopContent[2].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{sportsCaTopContent[3].title}}" target="_blank" href="{{sportsCaTopContent[3].url}}">
+                                        {{sportsCaTopContent[3].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{sportsCaTopContent[4].title}}" target="_blank" href="{{sportsCaTopContent[4].url}}">
+                                        {{sportsCaTopContent[4].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- sports Au -->
+                <div class="row border-bottom-1-e5 pt-3">
+                    <h3 class="mb-3">
+                        <a title="Australia" href="#">
+                            Australia
+                        </a>
+                    </h3>
+
+                    <div class="col-lg-12">
+                        <div class="row border-bottom-1-e5">
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-3">
+                                        <a title="{{sportsAuTopContent[0].title}}" target="_blank" href="{{sportsAuTopContent[0].url}}">
+                                            <img width="100%" height="auto" src="{{sportsAuTopContent[0].urlToImage}}" alt="This is an image">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <h6 class="fs-6 fw-bold">
+                                            <a title="{{sportsAuTopContent[0].title}}" target="_blank" href="{{sportsAuTopContent[0].url}}">
+                                                {{sportsAuTopContent[0].title}}
+                                            </a>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{sportsAuTopContent[0].title}}" target="_blank" href="{{sportsAuTopContent[0].url}}">
+                                            {{sportsAuTopContent[0].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="row">
+                                    <h6 class="fs-6 fw-bold">
+                                        <a title="{{sportsAuTopContent[1].title}}" target="_blank" href="{{sportsAuTopContent[1].url}}">
+                                            {{sportsAuTopContent[1].title}}
+                                        </a>
+                                    </h6>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{sportsAuTopContent[1].title}}" target="_blank" href="{{sportsAuTopContent[1].url}}">
+                                            {{sportsAuTopContent[1].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{sportsAuTopContent[2].title}}" target="_blank" href="{{sportsAuTopContent[2].url}}">
+                                        {{sportsAuTopContent[2].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{sportsAuTopContent[3].title}}" target="_blank" href="{{sportsAuTopContent[3].url}}">
+                                        {{sportsAuTopContent[3].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{sportsAuTopContent[4].title}}" target="_blank" href="{{sportsAuTopContent[4].url}}">
+                                        {{sportsAuTopContent[4].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- sports Ie -->
+                <div class="row border-bottom-1-e5 pt-3">
+                    <h3 class="mb-3">
+                        <a title="Ireland" href="#">
+                            Ireland
+                        </a>
+                    </h3>
+
+                    <div class="col-lg-12">
+                        <div class="row border-bottom-1-e5">
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-3">
+                                        <a title="{{sportsIeTopContent[0].title}}" target="_blank" href="{{sportsIeTopContent[0].url}}">
+                                            <img width="100%" height="auto" src="{{sportsIeTopContent[0].urlToImage}}" alt="This is an image">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <h6 class="fs-6 fw-bold">
+                                            <a title="{{sportsIeTopContent[0].title}}" target="_blank" href="{{sportsIeTopContent[0].url}}">
+                                                {{sportsIeTopContent[0].title}}
+                                            </a>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{sportsIeTopContent[0].title}}" target="_blank" href="{{sportsIeTopContent[0].url}}">
+                                            {{sportsIeTopContent[0].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="row">
+                                    <h6 class="fs-6 fw-bold">
+                                        <a title="{{sportsIeTopContent[1].title}}" target="_blank" href="{{sportsIeTopContent[1].url}}">
+                                            {{sportsIeTopContent[1].title}}
+                                        </a>
+                                    </h6>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{sportsIeTopContent[1].title}}" target="_blank" href="{{sportsIeTopContent[1].url}}">
+                                            {{sportsIeTopContent[1].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{sportsIeTopContent[2].title}}" target="_blank" href="{{sportsIeTopContent[2].url}}">
+                                        {{sportsIeTopContent[2].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{sportsIeTopContent[3].title}}" target="_blank" href="{{sportsIeTopContent[3].url}}">
+                                        {{sportsIeTopContent[3].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{sportsIeTopContent[4].title}}" target="_blank" href="{{sportsIeTopContent[4].url}}">
+                                        {{sportsIeTopContent[4].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

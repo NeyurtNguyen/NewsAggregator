@@ -24,3 +24,44 @@ a {
     font-size: 18px;
     font-weight: bold;
 }
+
+.row-start {
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    height: 30%;
+    overflow: hidden;
+}
+
+.row-center {
+    -webkit-line-clamp: 6;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    height: 60%;
+    overflow: hidden;
+}
+
+.row-end {
+    height: 10%;
+    overflow: hidden;
+}
+
+.col-right {
+    -webkit-line-clamp: 5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 15px !important;
+}
+
+.border-right-1-e5 {
+    border-right: 1px solid #e5e5e5 !important;
+}
+
+.border-bottom-1-e5 {
+    border-bottom: 1px solid #e5e5e5 !important;
+}
+
+#row-heading-sub p {
+    font-size: 12px !important;
+}

@@ -89,12 +89,12 @@
             </div>
         </div>
 
-        <div class="row" id="main-content">
+        <div class="row border-bottom-1-e5" id="main-content">
 
             <div class="col-lg-5 border-right-1-e5 pl-3 pb-3 m-0 pr-3" id="left-content">
                 <h3 class="mb-3">Top News</h3>
 
-                <div *ngFor="let article of leftContent" class="row">
+                <div *ngFor="let article of leftContent" class="row pb-3">
                     <div class="row">
                         <h6 class="fs-6 fw-bold">
                             <a title="{{article.title}}" target="_blank" href="{{article.url}}">
@@ -120,6 +120,7 @@
             </div>
 
             <div class="col-lg-7 m-0 pl-3 pr-3 pb-3" id="right-content">
+                <!-- Business -->
                 <div class="row border-bottom-1-e5">
                     <h3 class="mb-3">
                         <a title="Business" href="business">
@@ -156,14 +157,14 @@
                             <div class="col-lg-4">
                                 <div class="row">
                                     <h6 class="fs-6 fw-bold">
-                                        <a title="{{businessTopContent[0].title}}" target="_blank" href="{{businessTopContent[0].url}}">
+                                        <a title="{{businessTopContent[1].title}}" target="_blank" href="{{businessTopContent[1].url}}">
                                             {{businessTopContent[1].title}}
                                         </a>
                                     </h6>
                                 </div>
                                 <div class="row">
                                     <p>
-                                        <a title="{{businessTopContent[0].title}}" target="_blank" href="{{businessTopContent[0].url}}">
+                                        <a title="{{businessTopContent[1].title}}" target="_blank" href="{{businessTopContent[1].url}}">
                                             {{businessTopContent[1].content}}
                                         </a>
                                     </p>
@@ -174,21 +175,21 @@
                         <div class="row">
                             <div class="col-lg-4 pt-3 pb-3">
                                 <h6 class="fs-6 fw-bold">
-                                    <a title="{{businessTopContent[0].title}}" target="_blank" href="{{businessTopContent[0].url}}">
+                                    <a title="{{businessTopContent[2].title}}" target="_blank" href="{{businessTopContent[2].url}}">
                                         {{businessTopContent[2].title}}
                                     </a>
                                 </h6>
                             </div>
                             <div class="col-lg-4 pt-3 pb-3">
                                 <h6 class="fs-6 fw-bold">
-                                    <a title="{{businessTopContent[0].title}}" target="_blank" href="{{businessTopContent[0].url}}">
+                                    <a title="{{businessTopContent[3].title}}" target="_blank" href="{{businessTopContent[3].url}}">
                                         {{businessTopContent[3].title}}
                                     </a>
                                 </h6>
                             </div>
                             <div class="col-lg-4 pt-3 pb-3">
                                 <h6 class="fs-6 fw-bold">
-                                    <a title="{{businessTopContent[0].title}}" target="_blank" href="{{businessTopContent[0].url}}">
+                                    <a title="{{businessTopContent[4].title}}" target="_blank" href="{{businessTopContent[4].url}}">
                                         {{businessTopContent[4].title}}
                                     </a>
                                 </h6>
@@ -197,7 +198,8 @@
                     </div>
                 </div>
 
-                <div class="row border-bottom-1-e5">
+                <!-- // Entertainment -->
+                <div class="row border-bottom-1-e5 pt-3">
                     <h3 class="mb-3">
                         <a title="Entertainment" href="entertainment">
                             Entertainment
@@ -233,14 +235,14 @@
                             <div class="col-lg-4">
                                 <div class="row">
                                     <h6 class="fs-6 fw-bold">
-                                        <a title="{{entertainmentTopContent[0].title}}" target="_blank" href="{{entertainmentTopContent[0].url}}">
+                                        <a title="{{entertainmentTopContent[1].title}}" target="_blank" href="{{entertainmentTopContent[1].url}}">
                                             {{entertainmentTopContent[1].title}}
                                         </a>
                                     </h6>
                                 </div>
                                 <div class="row">
                                     <p>
-                                        <a title="{{entertainmentTopContent[0].title}}" target="_blank" href="{{entertainmentTopContent[0].url}}">
+                                        <a title="{{entertainmentTopContent[1].title}}" target="_blank" href="{{entertainmentTopContent[1].url}}">
                                             {{entertainmentTopContent[1].content}}
                                         </a>
                                     </p>
@@ -251,21 +253,21 @@
                         <div class="row">
                             <div class="col-lg-4 pt-3 pb-3">
                                 <h6 class="fs-6 fw-bold">
-                                    <a title="{{entertainmentTopContent[0].title}}" target="_blank" href="{{entertainmentTopContent[0].url}}">
+                                    <a title="{{entertainmentTopContent[2].title}}" target="_blank" href="{{entertainmentTopContent[2].url}}">
                                         {{entertainmentTopContent[2].title}}
                                     </a>
                                 </h6>
                             </div>
                             <div class="col-lg-4 pt-3 pb-3">
                                 <h6 class="fs-6 fw-bold">
-                                    <a title="{{entertainmentTopContent[0].title}}" target="_blank" href="{{entertainmentTopContent[0].url}}">
+                                    <a title="{{entertainmentTopContent[3].title}}" target="_blank" href="{{entertainmentTopContent[3].url}}">
                                         {{entertainmentTopContent[3].title}}
                                     </a>
                                 </h6>
                             </div>
                             <div class="col-lg-4 pt-3 pb-3">
                                 <h6 class="fs-6 fw-bold">
-                                    <a title="{{entertainmentTopContent[0].title}}" target="_blank" href="{{entertainmentTopContent[0].url}}">
+                                    <a title="{{entertainmentTopContent[4].title}}" target="_blank" href="{{entertainmentTopContent[4].url}}">
                                         {{entertainmentTopContent[4].title}}
                                     </a>
                                 </h6>
@@ -274,7 +276,8 @@
                     </div>
                 </div>
 
-                <div class="row border-bottom-1-e5">
+                <!-- // General -->
+                <div class="row border-bottom-1-e5 pt-3">
                     <h3 class="mb-3">
                         <a title="General" href="general">
                             General
@@ -310,14 +313,14 @@
                             <div class="col-lg-4">
                                 <div class="row">
                                     <h6 class="fs-6 fw-bold">
-                                        <a title="{{generalTopContent[0].title}}" target="_blank" href="{{generalTopContent[0].url}}">
+                                        <a title="{{generalTopContent[1].title}}" target="_blank" href="{{generalTopContent[1].url}}">
                                             {{generalTopContent[1].title}}
                                         </a>
                                     </h6>
                                 </div>
                                 <div class="row">
                                     <p>
-                                        <a title="{{generalTopContent[0].title}}" target="_blank" href="{{generalTopContent[0].url}}">
+                                        <a title="{{generalTopContent[1].title}}" target="_blank" href="{{generalTopContent[1].url}}">
                                             {{generalTopContent[1].content}}
                                         </a>
                                     </p>
@@ -328,21 +331,21 @@
                         <div class="row">
                             <div class="col-lg-4 pt-3 pb-3">
                                 <h6 class="fs-6 fw-bold">
-                                    <a title="{{generalTopContent[0].title}}" target="_blank" href="{{generalTopContent[0].url}}">
+                                    <a title="{{generalTopContent[2].title}}" target="_blank" href="{{generalTopContent[2].url}}">
                                         {{generalTopContent[2].title}}
                                     </a>
                                 </h6>
                             </div>
                             <div class="col-lg-4 pt-3 pb-3">
                                 <h6 class="fs-6 fw-bold">
-                                    <a title="{{generalTopContent[0].title}}" target="_blank" href="{{generalTopContent[0].url}}">
+                                    <a title="{{generalTopContent[3].title}}" target="_blank" href="{{generalTopContent[3].url}}">
                                         {{generalTopContent[3].title}}
                                     </a>
                                 </h6>
                             </div>
                             <div class="col-lg-4 pt-3 pb-3">
                                 <h6 class="fs-6 fw-bold">
-                                    <a title="{{generalTopContent[0].title}}" target="_blank" href="{{generalTopContent[0].url}}">
+                                    <a title="{{generalTopContent[4].title}}" target="_blank" href="{{generalTopContent[4].url}}">
                                         {{generalTopContent[4].title}}
                                     </a>
                                 </h6>
@@ -351,7 +354,8 @@
                     </div>
                 </div>
 
-                <div class="row border-bottom-1-e5">
+                <!-- // Health -->
+                <div class="row border-bottom-1-e5 pt-3">
                     <h3 class="mb-3">
                         <a title="Health" href="health">
                             Health
@@ -387,14 +391,14 @@
                             <div class="col-lg-4">
                                 <div class="row">
                                     <h6 class="fs-6 fw-bold">
-                                        <a title="{{healthTopContent[0].title}}" target="_blank" href="{{healthTopContent[0].url}}">
+                                        <a title="{{healthTopContent[1].title}}" target="_blank" href="{{healthTopContent[1].url}}">
                                             {{healthTopContent[1].title}}
                                         </a>
                                     </h6>
                                 </div>
                                 <div class="row">
                                     <p>
-                                        <a title="{{healthTopContent[0].title}}" target="_blank" href="{{healthTopContent[0].url}}">
+                                        <a title="{{healthTopContent[1].title}}" target="_blank" href="{{healthTopContent[1].url}}">
                                             {{healthTopContent[1].content}}
                                         </a>
                                     </p>
@@ -405,21 +409,21 @@
                         <div class="row">
                             <div class="col-lg-4 pt-3 pb-3">
                                 <h6 class="fs-6 fw-bold">
-                                    <a title="{{generalTopContent[0].title}}" target="_blank" href="{{generalTopContent[0].url}}">
+                                    <a title="{{generalTopContent[2].title}}" target="_blank" href="{{generalTopContent[2].url}}">
                                         {{generalTopContent[2].title}}
                                     </a>
                                 </h6>
                             </div>
                             <div class="col-lg-4 pt-3 pb-3">
                                 <h6 class="fs-6 fw-bold">
-                                    <a title="{{generalTopContent[0].title}}" target="_blank" href="{{generalTopContent[0].url}}">
+                                    <a title="{{generalTopContent[3].title}}" target="_blank" href="{{generalTopContent[3].url}}">
                                         {{generalTopContent[3].title}}
                                     </a>
                                 </h6>
                             </div>
                             <div class="col-lg-4 pt-3 pb-3">
                                 <h6 class="fs-6 fw-bold">
-                                    <a title="{{generalTopContent[0].title}}" target="_blank" href="{{generalTopContent[0].url}}">
+                                    <a title="{{generalTopContent[4].title}}" target="_blank" href="{{generalTopContent[4].url}}">
                                         {{generalTopContent[4].title}}
                                     </a>
                                 </h6>
@@ -428,7 +432,8 @@
                     </div>
                 </div>
 
-                <div class="row border-bottom-1-e5">
+                <!-- // science -->
+                <div class="row border-bottom-1-e5 pt-3">
                     <h3 class="mb-3">
                         <a title="Science" href="science">
                             Science
@@ -464,14 +469,14 @@
                             <div class="col-lg-4">
                                 <div class="row">
                                     <h6 class="fs-6 fw-bold">
-                                        <a title="{{scienceTopContent[0].title}}" target="_blank" href="{{scienceTopContent[0].url}}">
+                                        <a title="{{scienceTopContent[1].title}}" target="_blank" href="{{scienceTopContent[1].url}}">
                                             {{scienceTopContent[1].title}}
                                         </a>
                                     </h6>
                                 </div>
                                 <div class="row">
                                     <p>
-                                        <a title="{{scienceTopContent[0].title}}" target="_blank" href="{{scienceTopContent[0].url}}">
+                                        <a title="{{scienceTopContent[1].title}}" target="_blank" href="{{scienceTopContent[1].url}}">
                                             {{scienceTopContent[1].content}}
                                         </a>
                                     </p>
@@ -482,21 +487,21 @@
                         <div class="row">
                             <div class="col-lg-4 pt-3 pb-3">
                                 <h6 class="fs-6 fw-bold">
-                                    <a title="{{scienceTopContent[0].title}}" target="_blank" href="{{scienceTopContent[0].url}}">
+                                    <a title="{{scienceTopContent[2].title}}" target="_blank" href="{{scienceTopContent[2].url}}">
                                         {{scienceTopContent[2].title}}
                                     </a>
                                 </h6>
                             </div>
                             <div class="col-lg-4 pt-3 pb-3">
                                 <h6 class="fs-6 fw-bold">
-                                    <a title="{{scienceTopContent[0].title}}" target="_blank" href="{{scienceTopContent[0].url}}">
+                                    <a title="{{scienceTopContent[3].title}}" target="_blank" href="{{scienceTopContent[3].url}}">
                                         {{scienceTopContent[3].title}}
                                     </a>
                                 </h6>
                             </div>
                             <div class="col-lg-4 pt-3 pb-3">
                                 <h6 class="fs-6 fw-bold">
-                                    <a title="{{scienceTopContent[0].title}}" target="_blank" href="{{scienceTopContent[0].url}}">
+                                    <a title="{{scienceTopContent[4].title}}" target="_blank" href="{{scienceTopContent[4].url}}">
                                         {{scienceTopContent[4].title}}
                                     </a>
                                 </h6>
@@ -505,7 +510,8 @@
                     </div>
                 </div>
 
-                <div class="row border-bottom-1-e5">
+                <!-- // sports -->
+                <div class="row border-bottom-1-e5 pt-3">
                     <h3 class="mb-3">
                         <a title="Sports" href="sports">
                             Sports
@@ -541,14 +547,14 @@
                             <div class="col-lg-4">
                                 <div class="row">
                                     <h6 class="fs-6 fw-bold">
-                                        <a title="{{sportsTopContent[0].title}}" target="_blank" href="{{sportsTopContent[0].url}}">
+                                        <a title="{{sportsTopContent[1].title}}" target="_blank" href="{{sportsTopContent[1].url}}">
                                             {{sportsTopContent[1].title}}
                                         </a>
                                     </h6>
                                 </div>
                                 <div class="row">
                                     <p>
-                                        <a title="{{sportsTopContent[0].title}}" target="_blank" href="{{sportsTopContent[0].url}}">
+                                        <a title="{{sportsTopContent[1].title}}" target="_blank" href="{{sportsTopContent[1].url}}">
                                             {{sportsTopContent[1].content}}
                                         </a>
                                     </p>
@@ -559,21 +565,21 @@
                         <div class="row">
                             <div class="col-lg-4 pt-3 pb-3">
                                 <h6 class="fs-6 fw-bold">
-                                    <a title="{{sportsTopContent[0].title}}" target="_blank" href="{{sportsTopContent[0].url}}">
+                                    <a title="{{sportsTopContent[2].title}}" target="_blank" href="{{sportsTopContent[2].url}}">
                                         {{sportsTopContent[2].title}}
                                     </a>
                                 </h6>
                             </div>
                             <div class="col-lg-4 pt-3 pb-3">
                                 <h6 class="fs-6 fw-bold">
-                                    <a title="{{sportsTopContent[0].title}}" target="_blank" href="{{sportsTopContent[0].url}}">
+                                    <a title="{{sportsTopContent[3].title}}" target="_blank" href="{{sportsTopContent[3].url}}">
                                         {{sportsTopContent[3].title}}
                                     </a>
                                 </h6>
                             </div>
                             <div class="col-lg-4 pt-3 pb-3">
                                 <h6 class="fs-6 fw-bold">
-                                    <a title="{{sportsTopContent[0].title}}" target="_blank" href="{{sportsTopContent[0].url}}">
+                                    <a title="{{sportsTopContent[4].title}}" target="_blank" href="{{sportsTopContent[4].url}}">
                                         {{sportsTopContent[4].title}}
                                     </a>
                                 </h6>
@@ -582,7 +588,8 @@
                     </div>
                 </div>
 
-                <div class="row border-bottom-1-e5">
+                <!-- // technology -->
+                <div class="row pt-3">
                     <h3 class="mb-3">
                         <a title="Technology" href="technology">
                             Technology
@@ -618,14 +625,14 @@
                             <div class="col-lg-4">
                                 <div class="row">
                                     <h6 class="fs-6 fw-bold">
-                                        <a title="{{technologyTopContent[0].title}}" target="_blank" href="{{technologyTopContent[0].url}}">
+                                        <a title="{{technologyTopContent[1].title}}" target="_blank" href="{{technologyTopContent[1].url}}">
                                             {{technologyTopContent[1].title}}
                                         </a>
                                     </h6>
                                 </div>
                                 <div class="row">
                                     <p>
-                                        <a title="{{technologyTopContent[0].title}}" target="_blank" href="{{technologyTopContent[0].url}}">
+                                        <a title="{{technologyTopContent[1].title}}" target="_blank" href="{{technologyTopContent[1].url}}">
                                             {{technologyTopContent[1].content}}
                                         </a>
                                     </p>
@@ -636,21 +643,21 @@
                         <div class="row">
                             <div class="col-lg-4 pt-3 pb-3">
                                 <h6 class="fs-6 fw-bold">
-                                    <a title="{{technologyTopContent[0].title}}" target="_blank" href="{{technologyTopContent[0].url}}">
+                                    <a title="{{technologyTopContent[2].title}}" target="_blank" href="{{technologyTopContent[2].url}}">
                                         {{technologyTopContent[2].title}}
                                     </a>
                                 </h6>
                             </div>
                             <div class="col-lg-4 pt-3 pb-3">
                                 <h6 class="fs-6 fw-bold">
-                                    <a title="{{technologyTopContent[0].title}}" target="_blank" href="{{technologyTopContent[0].url}}">
+                                    <a title="{{technologyTopContent[3].title}}" target="_blank" href="{{technologyTopContent[3].url}}">
                                         {{technologyTopContent[3].title}}
                                     </a>
                                 </h6>
                             </div>
                             <div class="col-lg-4 pt-3 pb-3">
                                 <h6 class="fs-6 fw-bold">
-                                    <a title="{{technologyTopContent[0].title}}" target="_blank" href="{{technologyTopContent[0].url}}">
+                                    <a title="{{technologyTopContent[4].title}}" target="_blank" href="{{technologyTopContent[4].url}}">
                                         {{technologyTopContent[4].title}}
                                     </a>
                                 </h6>

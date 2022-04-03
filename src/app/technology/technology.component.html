@@ -1,1 +1,515 @@
-<p>technology works!</p>
+<div class="container mt-3">
+    <div>
+        <div class="row">
+            <div class="col-lg-8 mb-3">
+                <a title="{{topHeadingDisplay.title}}" target="_blank" href="{{topHeadingDisplay.url}}">
+                    <img width="100%" height="auto" src="{{topHeadingDisplay.urlToImage}}" alt="This is an image">
+                </a>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <div class="row">
+                    <h1 class="fs-3 fw-bold">
+                        <a title="{{topHeadingDisplay.title}}" target="_blank" href="{{topHeadingDisplay.url}}">
+                            {{topHeadingDisplay.title}}
+                        </a>
+                    </h1>
+                </div>
+                <div class="row">
+                    <p>
+                        <a title="{{topHeadingDisplay.title}}" target="_blank" href="{{topHeadingDisplay.url}}">
+                            {{topHeadingDisplay.content}}
+                        </a>
+                    </p>
+                </div>
+                <div class="row">
+                    <p>Source: <a href="#">{{topHeadingDisplay.source.name}}</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row d-none d-md-inline-flex mb-5 border-bottom-1-e5" id="row-heading-sub">
+            <div class="col-lg-4 mb-3">
+                <div class="row row-start">
+                    <h6 class="fs-6 fw-bold">
+                        <a title="{{topHeadingArr[0].title}}" target="_blank" href="{{topHeadingArr[0].url}}">
+                            {{topHeadingArr[0].title}}
+                        </a>
+                    </h6>
+                </div>
+                <div class="row row-center">
+                    <p>
+                        <a title="{{topHeadingArr[0].title}}" target="_blank" href="{{topHeadingArr[0].url}}">
+                            {{topHeadingArr[0].content}}
+                        </a>
+                    </p>
+                </div>
+                <div class="row row-end">
+                    <p>Source: <a href="#">{{topHeadingArr[0].source.name}}</a></p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-3">
+                <div class="row row-start">
+                    <h6 class="fs-6 fw-bold">
+                        <a title="{{topHeadingArr[1].title}}" target="_blank" href="{{topHeadingArr[1].url}}">
+                            {{topHeadingArr[1].title}}
+                        </a>
+                    </h6>
+                </div>
+                <div class="row row-center">
+                    <p>
+                        <a title="{{topHeadingArr[1].title}}" target="_blank" href="{{topHeadingArr[1].url}}">
+                            {{topHeadingArr[1].content}}
+                        </a>
+                    </p>
+                </div>
+                <div class="row row-end">
+                    <p>Source: <a href="#">{{topHeadingArr[1].source.name}}</a></p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-3">
+                <div class="row row-start">
+                    <h6 class="fs-6 fw-bold">
+                        <a title="{{topHeadingArr[2].title}}" target="_blank" href="{{topHeadingArr[2].url}}">
+                            {{topHeadingArr[2].title}}
+                        </a>
+                    </h6>
+                </div>
+                <div class="row row-center">
+                    <p>
+                        <a title="{{topHeadingArr[2].title}}" target="_blank" href="{{topHeadingArr[2].url}}">
+                            {{topHeadingArr[2].content}}
+                        </a>
+                    </p>
+                </div>
+                <div class="row row-end">
+                    <p>Source: <a href="#">{{topHeadingArr[2].source.name}}</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row border-bottom-1-e5" id="main-content">
+
+            <div class="col-lg-5 border-right-1-e5 pl-3 pb-3 m-0 pr-3" id="left-content">
+                <h3 class="mb-3">Top News</h3>
+
+                <div *ngFor="let article of leftContentTechPage" class="row pb-3">
+                    <div class="row">
+                        <h6 class="fs-6 fw-bold">
+                            <a title="{{article.title}}" target="_blank" href="{{article.url}}">
+                                {{article.title}}
+                            </a>
+                        </h6>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <a title="{{article.title}}" target="_blank" href="{{article.url}}">
+                                <img width="100%" height="auto" src="{{article.urlToImage}}" alt="This is an image">
+                            </a>
+                        </div>
+                        <div class="col-lg-7 col-right">
+                            <p>
+                                <a title="{{article.title}}" target="_blank" href="{{article.url}}">
+                                    {{article.content}}
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7 m-0 pl-3 pr-3 pb-3" id="right-content">
+                <!-- Tech Us -->
+                <div class="row border-bottom-1-e5">
+                    <h3 class="mb-3">
+                        <a title="United States" href="#">
+                            United States
+                        </a>
+                    </h3>
+
+                    <div class="col-lg-12">
+                        <div class="row border-bottom-1-e5">
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-3">
+                                        <a title="{{techUsTopContent[0].title}}" target="_blank" href="{{techUsTopContent[0].url}}">
+                                            <img width="100%" height="auto" src="{{techUsTopContent[0].urlToImage}}" alt="This is an image">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <h6 class="fs-6 fw-bold">
+                                            <a title="{{techUsTopContent[0].title}}" target="_blank" href="{{techUsTopContent[0].url}}">
+                                                {{techUsTopContent[0].title}}
+                                            </a>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{techUsTopContent[0].title}}" target="_blank" href="{{techUsTopContent[0].url}}">
+                                            {{techUsTopContent[0].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="row">
+                                    <h6 class="fs-6 fw-bold">
+                                        <a title="{{techUsTopContent[1].title}}" target="_blank" href="{{techUsTopContent[1].url}}">
+                                            {{techUsTopContent[1].title}}
+                                        </a>
+                                    </h6>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{techUsTopContent[1].title}}" target="_blank" href="{{techUsTopContent[1].url}}">
+                                            {{techUsTopContent[1].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{techUsTopContent[2].title}}" target="_blank" href="{{techUsTopContent[2].url}}">
+                                        {{techUsTopContent[2].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{techUsTopContent[3].title}}" target="_blank" href="{{techUsTopContent[3].url}}">
+                                        {{techUsTopContent[3].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{techUsTopContent[4].title}}" target="_blank" href="{{techUsTopContent[4].url}}">
+                                        {{techUsTopContent[4].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- tech Gb -->
+                <div class="row border-bottom-1-e5 pt-3">
+                    <h3 class="mb-3">
+                        <a title="United Kingdom" href="#">
+                            United Kingdom
+                        </a>
+                    </h3>
+
+                    <div class="col-lg-12">
+                        <div class="row border-bottom-1-e5">
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-3">
+                                        <a title="{{techGbTopContent[0].title}}" target="_blank" href="{{techGbTopContent[0].url}}">
+                                            <img width="100%" height="auto" src="{{techGbTopContent[0].urlToImage}}" alt="This is an image">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <h6 class="fs-6 fw-bold">
+                                            <a title="{{techGbTopContent[0].title}}" target="_blank" href="{{techGbTopContent[0].url}}">
+                                                {{techGbTopContent[0].title}}
+                                            </a>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{techGbTopContent[0].title}}" target="_blank" href="{{techGbTopContent[0].url}}">
+                                            {{techGbTopContent[0].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="row">
+                                    <h6 class="fs-6 fw-bold">
+                                        <a title="{{techGbTopContent[1].title}}" target="_blank" href="{{techGbTopContent[1].url}}">
+                                            {{techGbTopContent[1].title}}
+                                        </a>
+                                    </h6>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{techGbTopContent[1].title}}" target="_blank" href="{{techGbTopContent[1].url}}">
+                                            {{techGbTopContent[1].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{techGbTopContent[2].title}}" target="_blank" href="{{techGbTopContent[2].url}}">
+                                        {{techGbTopContent[2].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{techGbTopContent[3].title}}" target="_blank" href="{{techGbTopContent[3].url}}">
+                                        {{techGbTopContent[3].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{techGbTopContent[4].title}}" target="_blank" href="{{techGbTopContent[4].url}}">
+                                        {{techGbTopContent[4].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- tech Ca -->
+                <div class="row border-bottom-1-e5 pt-3">
+                    <h3 class="mb-3">
+                        <a title="Canada" href="#">
+                            Canada
+                        </a>
+                    </h3>
+
+                    <div class="col-lg-12">
+                        <div class="row border-bottom-1-e5">
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-3">
+                                        <a title="{{techCaTopContent[0].title}}" target="_blank" href="{{techCaTopContent[0].url}}">
+                                            <img width="100%" height="auto" src="{{techCaTopContent[0].urlToImage}}" alt="This is an image">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <h6 class="fs-6 fw-bold">
+                                            <a title="{{techCaTopContent[0].title}}" target="_blank" href="{{techCaTopContent[0].url}}">
+                                                {{techCaTopContent[0].title}}
+                                            </a>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{techCaTopContent[0].title}}" target="_blank" href="{{techCaTopContent[0].url}}">
+                                            {{techCaTopContent[0].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="row">
+                                    <h6 class="fs-6 fw-bold">
+                                        <a title="{{techCaTopContent[1].title}}" target="_blank" href="{{techCaTopContent[1].url}}">
+                                            {{techCaTopContent[1].title}}
+                                        </a>
+                                    </h6>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{techCaTopContent[1].title}}" target="_blank" href="{{techCaTopContent[1].url}}">
+                                            {{techCaTopContent[1].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{techCaTopContent[2].title}}" target="_blank" href="{{techCaTopContent[2].url}}">
+                                        {{techCaTopContent[2].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{techCaTopContent[3].title}}" target="_blank" href="{{techCaTopContent[3].url}}">
+                                        {{techCaTopContent[3].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{techCaTopContent[4].title}}" target="_blank" href="{{techCaTopContent[4].url}}">
+                                        {{techCaTopContent[4].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- tech Au -->
+                <div class="row border-bottom-1-e5 pt-3">
+                    <h3 class="mb-3">
+                        <a title="Australia" href="#">
+                            Australia
+                        </a>
+                    </h3>
+
+                    <div class="col-lg-12">
+                        <div class="row border-bottom-1-e5">
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-3">
+                                        <a title="{{techAuTopContent[0].title}}" target="_blank" href="{{techAuTopContent[0].url}}">
+                                            <img width="100%" height="auto" src="{{techAuTopContent[0].urlToImage}}" alt="This is an image">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <h6 class="fs-6 fw-bold">
+                                            <a title="{{techAuTopContent[0].title}}" target="_blank" href="{{techAuTopContent[0].url}}">
+                                                {{techAuTopContent[0].title}}
+                                            </a>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{techAuTopContent[0].title}}" target="_blank" href="{{techAuTopContent[0].url}}">
+                                            {{techAuTopContent[0].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="row">
+                                    <h6 class="fs-6 fw-bold">
+                                        <a title="{{techAuTopContent[1].title}}" target="_blank" href="{{techAuTopContent[1].url}}">
+                                            {{techAuTopContent[1].title}}
+                                        </a>
+                                    </h6>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{techAuTopContent[1].title}}" target="_blank" href="{{techAuTopContent[1].url}}">
+                                            {{techAuTopContent[1].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{techAuTopContent[2].title}}" target="_blank" href="{{techAuTopContent[2].url}}">
+                                        {{techAuTopContent[2].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{techAuTopContent[3].title}}" target="_blank" href="{{techAuTopContent[3].url}}">
+                                        {{techAuTopContent[3].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{techAuTopContent[4].title}}" target="_blank" href="{{techAuTopContent[4].url}}">
+                                        {{techAuTopContent[4].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- tech Ie -->
+                <div class="row border-bottom-1-e5 pt-3">
+                    <h3 class="mb-3">
+                        <a title="Ireland" href="#">
+                            Ireland
+                        </a>
+                    </h3>
+
+                    <div class="col-lg-12">
+                        <div class="row border-bottom-1-e5">
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-3">
+                                        <a title="{{techIeTopContent[0].title}}" target="_blank" href="{{techIeTopContent[0].url}}">
+                                            <img width="100%" height="auto" src="{{techIeTopContent[0].urlToImage}}" alt="This is an image">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <h6 class="fs-6 fw-bold">
+                                            <a title="{{techIeTopContent[0].title}}" target="_blank" href="{{techIeTopContent[0].url}}">
+                                                {{techIeTopContent[0].title}}
+                                            </a>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{techIeTopContent[0].title}}" target="_blank" href="{{techIeTopContent[0].url}}">
+                                            {{techIeTopContent[0].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="row">
+                                    <h6 class="fs-6 fw-bold">
+                                        <a title="{{techIeTopContent[1].title}}" target="_blank" href="{{techIeTopContent[1].url}}">
+                                            {{techIeTopContent[1].title}}
+                                        </a>
+                                    </h6>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{techIeTopContent[1].title}}" target="_blank" href="{{techIeTopContent[1].url}}">
+                                            {{techIeTopContent[1].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{techIeTopContent[2].title}}" target="_blank" href="{{techIeTopContent[2].url}}">
+                                        {{techIeTopContent[2].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{techIeTopContent[3].title}}" target="_blank" href="{{techIeTopContent[3].url}}">
+                                        {{techIeTopContent[3].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{techIeTopContent[4].title}}" target="_blank" href="{{techIeTopContent[4].url}}">
+                                        {{techIeTopContent[4].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

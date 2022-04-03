@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'news_aggregator';
+
+  onClickSubmit(value:any) {
+    console.log(value.search);
+  }
 }

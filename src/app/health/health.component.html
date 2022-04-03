@@ -1,1 +1,515 @@
-<p>health works!</p>
+<div class="container mt-3">
+    <div>
+        <div class="row">
+            <div class="col-lg-8 mb-3">
+                <a title="{{topHeadingDisplay.title}}" target="_blank" href="{{topHeadingDisplay.url}}">
+                    <img width="100%" height="auto" src="{{topHeadingDisplay.urlToImage}}" alt="This is an image">
+                </a>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <div class="row">
+                    <h1 class="fs-3 fw-bold">
+                        <a title="{{topHeadingDisplay.title}}" target="_blank" href="{{topHeadingDisplay.url}}">
+                            {{topHeadingDisplay.title}}
+                        </a>
+                    </h1>
+                </div>
+                <div class="row">
+                    <p>
+                        <a title="{{topHeadingDisplay.title}}" target="_blank" href="{{topHeadingDisplay.url}}">
+                            {{topHeadingDisplay.content}}
+                        </a>
+                    </p>
+                </div>
+                <div class="row">
+                    <p>Source: <a href="#">{{topHeadingDisplay.source.name}}</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row d-none d-md-inline-flex mb-5 border-bottom-1-e5" id="row-heading-sub">
+            <div class="col-lg-4 mb-3">
+                <div class="row row-start">
+                    <h6 class="fs-6 fw-bold">
+                        <a title="{{topHeadingArr[0].title}}" target="_blank" href="{{topHeadingArr[0].url}}">
+                            {{topHeadingArr[0].title}}
+                        </a>
+                    </h6>
+                </div>
+                <div class="row row-center">
+                    <p>
+                        <a title="{{topHeadingArr[0].title}}" target="_blank" href="{{topHeadingArr[0].url}}">
+                            {{topHeadingArr[0].content}}
+                        </a>
+                    </p>
+                </div>
+                <div class="row row-end">
+                    <p>Source: <a href="#">{{topHeadingArr[0].source.name}}</a></p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-3">
+                <div class="row row-start">
+                    <h6 class="fs-6 fw-bold">
+                        <a title="{{topHeadingArr[1].title}}" target="_blank" href="{{topHeadingArr[1].url}}">
+                            {{topHeadingArr[1].title}}
+                        </a>
+                    </h6>
+                </div>
+                <div class="row row-center">
+                    <p>
+                        <a title="{{topHeadingArr[1].title}}" target="_blank" href="{{topHeadingArr[1].url}}">
+                            {{topHeadingArr[1].content}}
+                        </a>
+                    </p>
+                </div>
+                <div class="row row-end">
+                    <p>Source: <a href="#">{{topHeadingArr[1].source.name}}</a></p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-3">
+                <div class="row row-start">
+                    <h6 class="fs-6 fw-bold">
+                        <a title="{{topHeadingArr[2].title}}" target="_blank" href="{{topHeadingArr[2].url}}">
+                            {{topHeadingArr[2].title}}
+                        </a>
+                    </h6>
+                </div>
+                <div class="row row-center">
+                    <p>
+                        <a title="{{topHeadingArr[2].title}}" target="_blank" href="{{topHeadingArr[2].url}}">
+                            {{topHeadingArr[2].content}}
+                        </a>
+                    </p>
+                </div>
+                <div class="row row-end">
+                    <p>Source: <a href="#">{{topHeadingArr[2].source.name}}</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row border-bottom-1-e5" id="main-content">
+
+            <div class="col-lg-5 border-right-1-e5 pl-3 pb-3 m-0 pr-3" id="left-content">
+                <h3 class="mb-3">Top News</h3>
+
+                <div *ngFor="let article of leftContentHealthPage" class="row pb-3">
+                    <div class="row">
+                        <h6 class="fs-6 fw-bold">
+                            <a title="{{article.title}}" target="_blank" href="{{article.url}}">
+                                {{article.title}}
+                            </a>
+                        </h6>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <a title="{{article.title}}" target="_blank" href="{{article.url}}">
+                                <img width="100%" height="auto" src="{{article.urlToImage}}" alt="This is an image">
+                            </a>
+                        </div>
+                        <div class="col-lg-7 col-right">
+                            <p>
+                                <a title="{{article.title}}" target="_blank" href="{{article.url}}">
+                                    {{article.content}}
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7 m-0 pl-3 pr-3 pb-3" id="right-content">
+                <!-- Health Us -->
+                <div class="row border-bottom-1-e5">
+                    <h3 class="mb-3">
+                        <a title="United States" href="#">
+                            United States
+                        </a>
+                    </h3>
+
+                    <div class="col-lg-12">
+                        <div class="row border-bottom-1-e5">
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-3">
+                                        <a title="{{healthUsTopContent[0].title}}" target="_blank" href="{{healthUsTopContent[0].url}}">
+                                            <img width="100%" height="auto" src="{{healthUsTopContent[0].urlToImage}}" alt="This is an image">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <h6 class="fs-6 fw-bold">
+                                            <a title="{{healthUsTopContent[0].title}}" target="_blank" href="{{healthUsTopContent[0].url}}">
+                                                {{healthUsTopContent[0].title}}
+                                            </a>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{healthUsTopContent[0].title}}" target="_blank" href="{{healthUsTopContent[0].url}}">
+                                            {{healthUsTopContent[0].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="row">
+                                    <h6 class="fs-6 fw-bold">
+                                        <a title="{{healthUsTopContent[1].title}}" target="_blank" href="{{healthUsTopContent[1].url}}">
+                                            {{healthUsTopContent[1].title}}
+                                        </a>
+                                    </h6>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{healthUsTopContent[1].title}}" target="_blank" href="{{healthUsTopContent[1].url}}">
+                                            {{healthUsTopContent[1].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{healthUsTopContent[2].title}}" target="_blank" href="{{healthUsTopContent[2].url}}">
+                                        {{healthUsTopContent[2].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{healthUsTopContent[3].title}}" target="_blank" href="{{healthUsTopContent[3].url}}">
+                                        {{healthUsTopContent[3].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{healthUsTopContent[4].title}}" target="_blank" href="{{healthUsTopContent[4].url}}">
+                                        {{healthUsTopContent[4].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- health Gb -->
+                <div class="row border-bottom-1-e5 pt-3">
+                    <h3 class="mb-3">
+                        <a title="United Kingdom" href="#">
+                            United Kingdom
+                        </a>
+                    </h3>
+
+                    <div class="col-lg-12">
+                        <div class="row border-bottom-1-e5">
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-3">
+                                        <a title="{{healthGbTopContent[0].title}}" target="_blank" href="{{healthGbTopContent[0].url}}">
+                                            <img width="100%" height="auto" src="{{healthGbTopContent[0].urlToImage}}" alt="This is an image">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <h6 class="fs-6 fw-bold">
+                                            <a title="{{healthGbTopContent[0].title}}" target="_blank" href="{{healthGbTopContent[0].url}}">
+                                                {{healthGbTopContent[0].title}}
+                                            </a>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{healthGbTopContent[0].title}}" target="_blank" href="{{healthGbTopContent[0].url}}">
+                                            {{healthGbTopContent[0].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="row">
+                                    <h6 class="fs-6 fw-bold">
+                                        <a title="{{healthGbTopContent[1].title}}" target="_blank" href="{{healthGbTopContent[1].url}}">
+                                            {{healthGbTopContent[1].title}}
+                                        </a>
+                                    </h6>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{healthGbTopContent[1].title}}" target="_blank" href="{{healthGbTopContent[1].url}}">
+                                            {{healthGbTopContent[1].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{healthGbTopContent[2].title}}" target="_blank" href="{{healthGbTopContent[2].url}}">
+                                        {{healthGbTopContent[2].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{healthGbTopContent[3].title}}" target="_blank" href="{{healthGbTopContent[3].url}}">
+                                        {{healthGbTopContent[3].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{healthGbTopContent[4].title}}" target="_blank" href="{{healthGbTopContent[4].url}}">
+                                        {{healthGbTopContent[4].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- health Ca -->
+                <div class="row border-bottom-1-e5 pt-3">
+                    <h3 class="mb-3">
+                        <a title="Canada" href="#">
+                            Canada
+                        </a>
+                    </h3>
+
+                    <div class="col-lg-12">
+                        <div class="row border-bottom-1-e5">
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-3">
+                                        <a title="{{healthCaTopContent[0].title}}" target="_blank" href="{{healthCaTopContent[0].url}}">
+                                            <img width="100%" height="auto" src="{{healthCaTopContent[0].urlToImage}}" alt="This is an image">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <h6 class="fs-6 fw-bold">
+                                            <a title="{{healthCaTopContent[0].title}}" target="_blank" href="{{healthCaTopContent[0].url}}">
+                                                {{healthCaTopContent[0].title}}
+                                            </a>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{healthCaTopContent[0].title}}" target="_blank" href="{{healthCaTopContent[0].url}}">
+                                            {{healthCaTopContent[0].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="row">
+                                    <h6 class="fs-6 fw-bold">
+                                        <a title="{{healthCaTopContent[1].title}}" target="_blank" href="{{healthCaTopContent[1].url}}">
+                                            {{healthCaTopContent[1].title}}
+                                        </a>
+                                    </h6>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{healthCaTopContent[1].title}}" target="_blank" href="{{healthCaTopContent[1].url}}">
+                                            {{healthCaTopContent[1].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{healthCaTopContent[2].title}}" target="_blank" href="{{healthCaTopContent[2].url}}">
+                                        {{healthCaTopContent[2].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{healthCaTopContent[3].title}}" target="_blank" href="{{healthCaTopContent[3].url}}">
+                                        {{healthCaTopContent[3].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{healthCaTopContent[4].title}}" target="_blank" href="{{healthCaTopContent[4].url}}">
+                                        {{healthCaTopContent[4].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- health Au -->
+                <div class="row border-bottom-1-e5 pt-3">
+                    <h3 class="mb-3">
+                        <a title="Australia" href="#">
+                            Australia
+                        </a>
+                    </h3>
+
+                    <div class="col-lg-12">
+                        <div class="row border-bottom-1-e5">
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-3">
+                                        <a title="{{healthAuTopContent[0].title}}" target="_blank" href="{{healthAuTopContent[0].url}}">
+                                            <img width="100%" height="auto" src="{{healthAuTopContent[0].urlToImage}}" alt="This is an image">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <h6 class="fs-6 fw-bold">
+                                            <a title="{{healthAuTopContent[0].title}}" target="_blank" href="{{healthAuTopContent[0].url}}">
+                                                {{healthAuTopContent[0].title}}
+                                            </a>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{healthAuTopContent[0].title}}" target="_blank" href="{{healthAuTopContent[0].url}}">
+                                            {{healthAuTopContent[0].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="row">
+                                    <h6 class="fs-6 fw-bold">
+                                        <a title="{{healthAuTopContent[1].title}}" target="_blank" href="{{healthAuTopContent[1].url}}">
+                                            {{healthAuTopContent[1].title}}
+                                        </a>
+                                    </h6>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{healthAuTopContent[1].title}}" target="_blank" href="{{healthAuTopContent[1].url}}">
+                                            {{healthAuTopContent[1].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{healthAuTopContent[2].title}}" target="_blank" href="{{healthAuTopContent[2].url}}">
+                                        {{healthAuTopContent[2].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{healthAuTopContent[3].title}}" target="_blank" href="{{healthAuTopContent[3].url}}">
+                                        {{healthAuTopContent[3].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{healthAuTopContent[4].title}}" target="_blank" href="{{healthAuTopContent[4].url}}">
+                                        {{healthAuTopContent[4].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- health Ie -->
+                <div class="row border-bottom-1-e5 pt-3">
+                    <h3 class="mb-3">
+                        <a title="Ireland" href="#">
+                            Ireland
+                        </a>
+                    </h3>
+
+                    <div class="col-lg-12">
+                        <div class="row border-bottom-1-e5">
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-3">
+                                        <a title="{{healthIeTopContent[0].title}}" target="_blank" href="{{healthIeTopContent[0].url}}">
+                                            <img width="100%" height="auto" src="{{healthIeTopContent[0].urlToImage}}" alt="This is an image">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <h6 class="fs-6 fw-bold">
+                                            <a title="{{healthIeTopContent[0].title}}" target="_blank" href="{{healthIeTopContent[0].url}}">
+                                                {{healthIeTopContent[0].title}}
+                                            </a>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{healthIeTopContent[0].title}}" target="_blank" href="{{healthIeTopContent[0].url}}">
+                                            {{healthIeTopContent[0].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="row">
+                                    <h6 class="fs-6 fw-bold">
+                                        <a title="{{healthIeTopContent[1].title}}" target="_blank" href="{{healthIeTopContent[1].url}}">
+                                            {{healthIeTopContent[1].title}}
+                                        </a>
+                                    </h6>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <a title="{{healthIeTopContent[1].title}}" target="_blank" href="{{healthIeTopContent[1].url}}">
+                                            {{healthIeTopContent[1].content}}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{healthIeTopContent[2].title}}" target="_blank" href="{{healthIeTopContent[2].url}}">
+                                        {{healthIeTopContent[2].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{healthIeTopContent[3].title}}" target="_blank" href="{{healthIeTopContent[3].url}}">
+                                        {{healthIeTopContent[3].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                            <div class="col-lg-4 pt-3 pb-3">
+                                <h6 class="fs-6 fw-bold">
+                                    <a title="{{healthIeTopContent[4].title}}" target="_blank" href="{{healthIeTopContent[4].url}}">
+                                        {{healthIeTopContent[4].title}}
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

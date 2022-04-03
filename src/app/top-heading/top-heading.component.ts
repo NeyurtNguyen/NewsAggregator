@@ -32,34 +32,34 @@ export class TopHeadingComponent implements OnInit {
           this.leftContent = result.articles.slice(0, 20);
           for (var i = 0; i < this.leftContent.length; i++) {
             if (this.leftContent[i].urlToImage == null) {
-              this.leftContent[i].urlToImage == "../../assets/not-image.jpg";
+              this.leftContent[i].urlToImage = "../../assets/not-image.jpg";
             } 
           }
         });
         
         // business
-        this._services.bussinessTopContent().subscribe((result) => {
+        this._services.businessTopContent().subscribe((result) => {
           console.log(result);
           if (result.articles.length >= 5){
             this.businessTopContent = result.articles.slice(0, 5);
             for (var i = 0; i < this.businessTopContent.length; i++) {
               if (this.businessTopContent[i].urlToImage == null) {
-                this.businessTopContent[i].urlToImage == "../../assets/not-image.jpg";
+                this.businessTopContent[i].urlToImage = "../../assets/not-image.jpg";
               } 
             }
           } else {
-            this._services.bussinessTopContent2().subscribe((result) => {
+            this._services.businessTopContent2().subscribe((result) => {
               console.log(result);
               if (result.articles.length >= 5){
                 this.businessTopContent = result.articles.slice(0, 5);
                 for (var i = 0; i < this.businessTopContent.length; i++) {
                   if (this.businessTopContent[i].urlToImage == null) {
-                    this.businessTopContent[i].urlToImage == "../../assets/not-image.jpg";
+                    this.businessTopContent[i].urlToImage = "../../assets/not-image.jpg";
                   } 
                 }
               } else {
                 this.businessTopContent = [
-                  {content: "", source: "", title: "", url: "", urlToImage: ""},
+                  { content: '', source: '', title: 'Error unknown', url: '', urlToImage: '../../assets/not-image.jpg' },
                   {content: "", source: "", title: "", url: "", urlToImage: ""},
                   {content: "", source: "", title: "", url: "", urlToImage: ""},
                   {content: "", source: "", title: "", url: "", urlToImage: ""},
@@ -77,7 +77,7 @@ export class TopHeadingComponent implements OnInit {
             this.entertainmentTopContent = result.articles.slice(0, 5);
             for (var i = 0; i < this.entertainmentTopContent.length; i++) {
               if (this.entertainmentTopContent[i].urlToImage == null) {
-                this.entertainmentTopContent[i].urlToImage == "../../assets/not-image.jpg";
+                this.entertainmentTopContent[i].urlToImage = "../../assets/not-image.jpg";
               } 
             }
           } else {
@@ -87,12 +87,12 @@ export class TopHeadingComponent implements OnInit {
                 this.entertainmentTopContent = result.articles.slice(0, 5);
                 for (var i = 0; i < this.entertainmentTopContent.length; i++) {
                   if (this.entertainmentTopContent[i].urlToImage == null) {
-                    this.entertainmentTopContent[i].urlToImage == "../../assets/not-image.jpg";
+                    this.entertainmentTopContent[i].urlToImage = "../../assets/not-image.jpg";
                   } 
                 }
               } else {
                 this.entertainmentTopContent = [
-                  {content: "", source: "", title: "", url: "", urlToImage: ""},
+                  { content: '', source: '', title: 'Error unknown', url: '', urlToImage: '../../assets/not-image.jpg' },
                   {content: "", source: "", title: "", url: "", urlToImage: ""},
                   {content: "", source: "", title: "", url: "", urlToImage: ""},
                   {content: "", source: "", title: "", url: "", urlToImage: ""},
@@ -110,7 +110,7 @@ export class TopHeadingComponent implements OnInit {
             this.generalTopContent = result.articles.slice(0, 5);
             for (var i = 0; i < this.generalTopContent.length; i++) {
               if (this.generalTopContent[i].urlToImage == null) {
-                this.generalTopContent[i].urlToImage == "../../assets/not-image.jpg";
+                this.generalTopContent[i].urlToImage = "../../assets/not-image.jpg";
               } 
             }
           } else {
@@ -120,12 +120,12 @@ export class TopHeadingComponent implements OnInit {
                 this.generalTopContent = result.articles.slice(0, 5);
                 for (var i = 0; i < this.generalTopContent.length; i++) {
                   if (this.generalTopContent[i].urlToImage == null) {
-                    this.generalTopContent[i].urlToImage == "../../assets/not-image.jpg";
+                    this.generalTopContent[i].urlToImage = "../../assets/not-image.jpg";
                   } 
                 }
               } else {
                 this.generalTopContent = [
-                  {content: "", source: "", title: "", url: "", urlToImage: ""},
+                  { content: '', source: '', title: 'Error unknown', url: '', urlToImage: '../../assets/not-image.jpg' },
                   {content: "", source: "", title: "", url: "", urlToImage: ""},
                   {content: "", source: "", title: "", url: "", urlToImage: ""},
                   {content: "", source: "", title: "", url: "", urlToImage: ""},
@@ -143,7 +143,7 @@ export class TopHeadingComponent implements OnInit {
             this.healthTopContent = result.articles.slice(0, 5);
             for (var i = 0; i < this.healthTopContent.length; i++) {
               if (this.healthTopContent[i].urlToImage == null) {
-                this.healthTopContent[i].urlToImage == "../../assets/not-image.jpg";
+                this.healthTopContent[i].urlToImage = "../../assets/not-image.jpg";
               } 
             }
           } else {
@@ -153,12 +153,12 @@ export class TopHeadingComponent implements OnInit {
                 this.healthTopContent = result.articles.slice(0, 5);
                 for (var i = 0; i < this.healthTopContent.length; i++) {
                   if (this.healthTopContent[i].urlToImage == null) {
-                    this.healthTopContent[i].urlToImage == "../../assets/not-image.jpg";
+                    this.healthTopContent[i].urlToImage = "../../assets/not-image.jpg";
                   } 
                 }
               } else {
                 this.healthTopContent = [
-                  {content: "", source: "", title: "", url: "", urlToImage: ""},
+                  { content: '', source: '', title: 'Error unknown', url: '', urlToImage: '../../assets/not-image.jpg' },
                   {content: "", source: "", title: "", url: "", urlToImage: ""},
                   {content: "", source: "", title: "", url: "", urlToImage: ""},
                   {content: "", source: "", title: "", url: "", urlToImage: ""},
@@ -176,7 +176,7 @@ export class TopHeadingComponent implements OnInit {
             this.scienceTopContent = result.articles.slice(0, 5);
             for (var i = 0; i < this.scienceTopContent.length; i++) {
               if (this.scienceTopContent[i].urlToImage == null) {
-                this.scienceTopContent[i].urlToImage == "../../assets/not-image.jpg";
+                this.scienceTopContent[i].urlToImage = "../../assets/not-image.jpg";
               } 
             }
           } else {
@@ -186,12 +186,12 @@ export class TopHeadingComponent implements OnInit {
                 this.scienceTopContent = result.articles.slice(0, 5);
                 for (var i = 0; i < this.scienceTopContent.length; i++) {
                   if (this.scienceTopContent[i].urlToImage == null) {
-                    this.scienceTopContent[i].urlToImage == "../../assets/not-image.jpg";
+                    this.scienceTopContent[i].urlToImage = "../../assets/not-image.jpg";
                   } 
                 }
               } else {
                 this.scienceTopContent = [
-                  {content: "", source: "", title: "", url: "", urlToImage: ""},
+                  { content: '', source: '', title: 'Error unknown', url: '', urlToImage: '../../assets/not-image.jpg' },
                   {content: "", source: "", title: "", url: "", urlToImage: ""},
                   {content: "", source: "", title: "", url: "", urlToImage: ""},
                   {content: "", source: "", title: "", url: "", urlToImage: ""},
@@ -209,7 +209,7 @@ export class TopHeadingComponent implements OnInit {
             this.sportsTopContent = result.articles.slice(0, 5);
             for (var i = 0; i < this.sportsTopContent.length; i++) {
               if (this.sportsTopContent[i].urlToImage == null) {
-                this.sportsTopContent[i].urlToImage == "../../assets/not-image.jpg";
+                this.sportsTopContent[i].urlToImage = "../../assets/not-image.jpg";
               } 
             }
           } else {
@@ -219,12 +219,12 @@ export class TopHeadingComponent implements OnInit {
                 this.sportsTopContent = result.articles.slice(0, 5);
                 for (var i = 0; i < this.sportsTopContent.length; i++) {
                   if (this.sportsTopContent[i].urlToImage == null) {
-                    this.sportsTopContent[i].urlToImage == "../../assets/not-image.jpg";
+                    this.sportsTopContent[i].urlToImage = "../../assets/not-image.jpg";
                   } 
                 }
               } else {
                 this.sportsTopContent = [
-                  {content: "", source: "", title: "", url: "", urlToImage: ""},
+                  { content: '', source: '', title: 'Error unknown', url: '', urlToImage: '../../assets/not-image.jpg' },
                   {content: "", source: "", title: "", url: "", urlToImage: ""},
                   {content: "", source: "", title: "", url: "", urlToImage: ""},
                   {content: "", source: "", title: "", url: "", urlToImage: ""},
@@ -242,7 +242,7 @@ export class TopHeadingComponent implements OnInit {
             this.technologyTopContent = result.articles.slice(0, 5);
             for (var i = 0; i < this.technologyTopContent.length; i++) {
               if (this.technologyTopContent[i].urlToImage == null) {
-                this.technologyTopContent[i].urlToImage == "../../assets/not-image.jpg";
+                this.technologyTopContent[i].urlToImage = "../../assets/not-image.jpg";
               } 
             }
           } else {
@@ -252,12 +252,12 @@ export class TopHeadingComponent implements OnInit {
                 this.technologyTopContent = result.articles.slice(0, 5);
                 for (var i = 0; i < this.technologyTopContent.length; i++) {
                   if (this.technologyTopContent[i].urlToImage == null) {
-                    this.technologyTopContent[i].urlToImage == "../../assets/not-image.jpg";
+                    this.technologyTopContent[i].urlToImage = "../../assets/not-image.jpg";
                   } 
                 }
               } else {
                 this.technologyTopContent = [
-                  {content: "", source: "", title: "", url: "", urlToImage: ""},
+                  { content: '', source: '', title: 'Error unknown', url: '', urlToImage: '../../assets/not-image.jpg' },
                   {content: "", source: "", title: "", url: "", urlToImage: ""},
                   {content: "", source: "", title: "", url: "", urlToImage: ""},
                   {content: "", source: "", title: "", url: "", urlToImage: ""},
