@@ -19,6 +19,7 @@ import { TechnologyComponent } from './technology/technology.component';
 // for HttpClient import:
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
 import { FormsModule } from '@angular/forms';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { FormsModule } from '@angular/forms';
     ScienceComponent,
     SportsComponent,
     TechnologyComponent,
+    PagenotfoundComponent,
   ],
   imports: [
     BrowserModule,

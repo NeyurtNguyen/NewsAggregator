@@ -1,3 +1,4 @@
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { TechnologyComponent } from './technology/technology.component';
 import { SportsComponent } from './sports/sports.component';
 import { ScienceComponent } from './science/science.component';
@@ -18,6 +19,8 @@ const routes: Routes = [
   {path: 'science', component: ScienceComponent}, //Science news
   {path: 'sports', component: SportsComponent}, //Sports news
   {path: 'technology', component: TechnologyComponent}, //Technology news
+  //Wild Card Route for 404 request
+  { path: '**', pathMatch: 'full', component: PagenotfoundComponent},
 ];
 
 @NgModule({
